@@ -20,6 +20,8 @@ pids
 # Optional npm cache directory
 .npm/
 
+input.css
+
 # Optional eslint cache
 .eslintcache/
 
