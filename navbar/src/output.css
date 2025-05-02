@@ -10,6 +10,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-3xs: 16rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -178,11 +179,26 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
@@ -198,6 +214,9 @@
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
+  }
+  .w-3xs {
+    width: var(--container-3xs);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -217,11 +236,17 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
   .justify-around {
     justify-content: space-around;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -243,6 +268,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-9 {
+    row-gap: calc(var(--spacing) * 9);
   }
   .rounded {
     border-radius: 0.25rem;
@@ -271,6 +299,9 @@
   }
   .bg-\[\#14213\] {
     background-color: #14213;
+  }
+  .bg-\[\#FCA\#\!\!\] {
+    background-color: #FCA#!!;
   }
   .bg-\[\#FCA\#\] {
     background-color: #FCA#;
@@ -317,6 +348,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .pt-7 {
+    padding-top: calc(var(--spacing) * 7);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -346,6 +380,9 @@
   .text-\[\#14213D\] {
     color: #14213D;
   }
+  .text-\[\#FCA311\] {
+    color: #FCA311;
+  }
   .text-\[\#\] {
     color: #;
   }
@@ -361,6 +398,26 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .md\:ml-0 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .md\:justify-around {
+    @media (width >= 48rem) {
+      justify-content: space-around;
+    }
   }
 }
 @property --tw-border-style {

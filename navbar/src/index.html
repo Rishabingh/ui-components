@@ -6,11 +6,11 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-black">
-  <nav class="flex justify-around fixed left-0 right-0 top-0 py-2 items-center">
-    <div class="left text-white bg-[#14213D] rounded-full p-2 h-11 w-11 flex justify-center items-center text-2xl font-semibold">
+  <nav class="flex md:justify-around fixed left-0 right-0 top-0 py-2 items-center mb-2 justify-between">
+    <div class="left text-white bg-[#14213D] rounded-full p-2 h-11 w-11 flex justify-center items-center text-2xl font-semibold ml-4 md:ml-0">
         <div>Rs</div>
     </div>
-    <div class="right">
+    <div class="right md:block hidden">
         <ul class="flex gap-2 text-[#14213D] text-[1.1rem] font-medium">
             <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="#">Home</a></li>
             <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="#">About Me</a></li>
@@ -20,6 +20,21 @@
             <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="#">Blog</a></li>
         </ul>
     </div>
+    <div class="mobile-right md:hidden mr-4">
+        <img src="./images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+    </div>
   </nav>
+  <div class="sidebar hidden fixed right-0 bg-[#14213D] top-0 bottom-0 w-3xs pt-7 px-4">
+    <ul class="flex flex-col gap-y-9 text-[#FCA311]">
+        <li class="close-btn"><img src="./images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+    </ul>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
