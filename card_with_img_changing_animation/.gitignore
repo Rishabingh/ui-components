@@ -1,2 +1,14 @@
-node_moudules/
+# Node.js dependencies
+node_modules/
+
+# Tailwind or Sass build output
+dist/
+build/
+public/output.css
+
+# If input.css is generated or temporary
 src/input.css
+
+# System files
+.DS_Store
+Thumbs.db
