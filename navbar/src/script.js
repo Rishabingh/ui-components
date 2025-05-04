@@ -3,6 +3,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const sidebar = document.querySelector('.sidebar');
     const closeBtn = document.querySelector('.close-btn')
     const touchBlock = document.querySelector('.touch-block');
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener("scroll", function () {
+        
+        if (window.scrollY > 50) {
+        navbar.classList.add('bg-[#14213D]/30', 'backdrop-blur-sm');
+        } else {
+        navbar.classList.remove('bg-[#14213D]/30', 'backdrop-blur-sm');
+        }
+        });
 
     menuBtn.addEventListener('click', ()=> {
         menuBtn.classList.toggle('hidden');
